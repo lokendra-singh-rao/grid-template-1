@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    background-color: rgb(236, 242, 248);
+    margin: 0;
+    padding: 0;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.main-div {
+    display: grid;
+    gap: 1.5rem;
+    grid-auto-columns: 1fr;
+    grid-template-areas: "one" "two" "three" "four" "five";
+    width: min(95%, 70rem);
+    margin-inline: auto;
+}
+
+.article-1 {
+    display: block;
+    grid-area: one;
+    background: rgb(117, 65, 200);
+    background-image: url(https://kabir-sagiii.github.io/CSS_Grid_learn-grid-the-easy-way/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+    color: rgb(255, 255, 255); 
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(217 19% 35%/ 0.25);
+}
+
+ .article-2 {
+    display: block;
+    grid-area: two;
+    background: rgb(72, 85, 106);
+    color: rgb(255, 255, 255);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(217 19% 35%/ 0.25);
+}
+
+ .article-3 {
+    display: block;
+    grid-area: three;
+    background: rgb(255, 255, 255);
+    color: rgb(72, 85, 106);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(217 19% 35%/ 0.25);
+}
+
+ .article-4 {
+    display: block;
+    grid-area: four;
+    background: rgb(25, 33, 46);
+    color: rgb(255, 255, 255);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(217 19% 35%/ 0.25);
+}
+
+ .article-5 {
+    display: block;
+    grid-area: five;
+    background: rgb(255, 255, 255);
+    color: rgb(72, 85, 106);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(217 19% 35%/ 0.25);
+}
+
+@media screen and (min-width: 33em) {
+    .main-div {
+        grid-template-areas:
+        "one one"
+        "two three"
+        "five five"
+        "four four";
+    }
+  }
+  
+  @media screen and (min-width: 38em) {
+    .main-div {
+      grid-template-areas:
+       'one one'
+       'two five'
+       'three five'
+       'four four';
+    }
+  }
+  
+  @media screen and (min-width: 54em) {
+    .main-div {
+        grid-template-areas:
+        "one one two"
+        "five five five"
+        "three four four";
+    }
+  }
+  
+  @media screen and (min-width: 75em) {
+    .main-div {
+        grid-template-areas:
+        "one one two five"
+        "three four four five";
+    }
+  }
+
+ .header {
+    display: flex;   
+    gap: 1rem;
+}
+
+ img {
+    width: 1.75rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+ }
+
+ .name {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+ }
+
+ .position {
+    margin: 0;
+    padding: 0;
+    font-size: 0.6875rem;
+    opacity: 0.5;
+ }
+
+ .main-text {
+    font-size: 20px;
+    margin-top: 1rem;
+    line-height: 24px;
+    
+ }
+
+ .sub-text {
+    font-size: 13px;
+    opacity: 0.7;
+    font-weight: 400;
+    margin-top: 1rem;
+    line-height: 19.5px;
+ }
+
+ 
+ 
